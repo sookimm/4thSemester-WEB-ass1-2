@@ -1,0 +1,56 @@
+#moviesTable tr:hover {
+  cursor: pointer;
+}
+
+#search {
+  color: green !important;
+  border: 2px solid green !important;
+}
+
+#clearForm {
+  color: red !important;
+  border: 2px solid red !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination .page-item:first-child .page-link::before {
+  content: "«";
+}
+
+.pagination .page-item:last-child .page-link::after {
+  content: "»";
+}
+
+.pagination .page-item .page-link {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.pagination .page-item .page-link::before,
+.pagination .page-item .page-link::after {
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.pagination .page-item .page-link:hover::before,
+.pagination .page-item .page-link:hover::after {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.pagination .page-item .page-link.active::before,
+.pagination .page-item .page-link.active::after {
+  background-color: #000;
+  color: #fff;
+}

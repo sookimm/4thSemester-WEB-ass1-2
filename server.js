@@ -31,9 +31,12 @@ db.initialize(MONGODB_CONN_STRING)
   .then(() => {
     // Define routes
 
+    // Serve static files from the "public" directory
+    app.use(express.static(path.join(__dirname)));
+
     // Home route
     app.get("/", (req, res) => {
-      res.json({ message: "API Listening" });
+      res.sendFile(path.join(__dirname, "index.html"));
     });
 
     // Add movie

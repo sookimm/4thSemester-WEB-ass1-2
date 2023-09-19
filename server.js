@@ -1,14 +1,3 @@
-/*********************************************************************************
- *  WEB422 – Assignment 1
- *  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.
- *  No part of this assignment has been copied manually or electronically from any other source
- *  (including web sites) or distributed to other students.
- *
- *  Name: Sooyeon Kim      Student ID: 149385213     Date: May 19, 2023
- *  Cyclic Link: https://scary-bee-snaps.cyclic.app
- *
- ********************************************************************************/
-
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
